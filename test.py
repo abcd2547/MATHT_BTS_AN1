@@ -1,36 +1,30 @@
-# comparer 2 chaine de caractere
-#chaine 1: chaine de reference
-#chaine 2: chaine a comparer
-# renvoie True si chaine 1=chaine 2, false sinon
-def comparer2chaine (chaine1, chaine2):
-        if(chaine1==chaine2):
-            return True
-        else :
-            return False
-#verifier 4 caractere
-#chaine1:chaine a verifier
-#return:true si 4 caractere
-def verifier4caractere(chaine1):
-        if(len(chaine1)==4):
-            return True
-        else:
-            return False
+# trouver les ingrédients dans la pizza
+# trouver le numéro que possède les pizza 
 
-def liste_chiffre(chiffre):
-        chiffre = [0,1,2,3,4,5,6,7,8,9]
+nom = ["regina", "margherita", "romaine", "4 fromages", "calzone"]
+ingredient = [["tomate", "mozzarella", "jambon", "champignons"],
+            ["tomate", "mozzarella", "basilic", "huile d'olive"],
+            ["tomate", "anchois", "origan", "huile d'olive"],
+            ["mozzarella", "gorgonzola", "parmesan", "selles-sur-cher"],
+            ["mozzarella", "jambon", "tomate", "oeufs"]
+             ]
 
-def verifieunchiffre(chaine1):
-        if (int(chaine1)):
-            return True
-        else:
-            return False
-def code_correct(chaine2):
-      code_correct==1234
-      if(chaine2==1234):
-            return True
-      else:
-            return False
-    
-        
+def pizza_avec_modif(tab):
+    pizza_valide = 0
+    numpizza = [99,99,99,99,99]
+    print("quel ingrédient souhaitez vous dans votre pizza?")
+    ingredient = (input("saisir ingrédient"))
+    for I in range (5):
+        for H in range (4):
+            if tab[I][H] == ingredient:
+                numpizza[pizza_valide] = I
+                pizza_valide = pizza_valide +1
+    return numpizza
+
+
+
+liste_pizza = pizza_avec_modif(ingredient)
+print (liste_pizza)
+                
 
 
