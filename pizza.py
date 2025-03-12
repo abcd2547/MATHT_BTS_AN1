@@ -21,24 +21,12 @@ def pizza_avec_modif(tab):
                 pizza_valide = pizza_valide +1
     return numpizza
 
-def les_pizza(tab):
-    if ingredient == 0 :
-        tab[0]
-    elif ingredient == 1 :
-        tab[1]
-    elif ingredient == 2 :
-        tab[2]
-    elif ingredient == 3 :
-        tab[3]
-    elif ingredient == 4 :
-        tab[4]
-    return
 
 
 
 liste_pizza = pizza_avec_modif(ingredient)
-fin = les_pizza(nom, ingredient)
-print (f"voici les pizzas avec cet ingrédient : \n {fin}")
+
+print ("voici les pizzas avec cet ingrédient :")
                 
 
 
