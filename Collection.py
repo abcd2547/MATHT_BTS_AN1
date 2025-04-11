@@ -1,6 +1,6 @@
 from random import randint
 
-#parcourir le tableau de la collection
+#parcourir  la collection
 def collectioncomplete(collection):
     res = True
     for i in range(0, 9):
@@ -13,5 +13,3 @@ def ajoute(collection):
     collection.append(nb_aleatoire)     #ajoute l'entier a la fin de la collection
     return collection
 
-def test():
-    collection = []
